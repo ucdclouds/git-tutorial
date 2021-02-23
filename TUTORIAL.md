@@ -16,3 +16,8 @@
 
 * Starting from command line:
     * `git init` -- Sets up git repository in current folder
+    * `git add <filename>` -- Single File (also accepts wildcars like `./*.py`)
+    * `git add .` -- Add all files in 
+
+# External Links
+[Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
