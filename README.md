@@ -16,12 +16,17 @@
 
 * Starting from command line:
     * `git init` -- Sets up git repository in current folder
-    * `git add <filename>` -- Single File (also accepts wildcars like `./*.py`)
+    <!-- * `git add <filename>` -- Single File (also accepts wildcars like `./*.py`) -->
+    * Add remote repository
+        * `git remote add <name> <url>`
+        * `<name>` can be any name, typically the main remote branch is called `origin`
+        * `<url>` is the URL of the git repo. This looks like `https://github.com/<username>/<repo_name>` if using HTTPS and `git@github.com:<username>/<repo_name>.git` if using SSH.
 * Starting from web
     * Create repository on GitHub.com (or equivalent)
     * Clone repository
-        * `git clone https://github.com/<username>/<repo_name>` -- No SSH
+        * `git clone https://github.com/<username>/<repo_name>` -- HTTPS/no SSH
         * `git clone git@github.com:<username>/<repo_name>.git` -- SSH
+    * Remote repository will automatically be added with this method, with the default name `origin`.
 
 ## Adding and committing files
 * Check the status of your repository with `git status`
