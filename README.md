@@ -81,9 +81,11 @@ Often, you're going to eventually want to merge the contents of one branch into 
 ## Diff
 Much like the command `diff`, `git diff` can provide information on the differences between files in different commits. 
 
-* By default, `git diff` alone will show the changes between all _staged files_ and the _last commit_. 
+* By default, `git diff` alone will show the changes between all _unstaged_ and the _last commit_. 
+    * `git diff --staged` shows changes between _staged_ and _last commit_
 * You can also see the differences between two versions of a file, using the commit hash found by running `git log`
-    * e.g. `git diff db821bc 5104f19 my_file.txt` where the two commit hashes are the shorter versions given by `git log --oneline`                                   
+    * e.g. `git diff db821bc 5104f19 my_file.txt` where the two commit hashes are the shorter versions given by `git log --oneline`           
+* `git diff <branch1> <branch2>` see diff between branches                        
 
 ## Working with remote repositories
  __This section may be incomplete in time for the Git workshop on Feb 25th.__
