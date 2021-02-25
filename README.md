@@ -20,6 +20,7 @@
 * `git add` -- add (stages) file
 * `git commit` -- Commits all staged files
 * `git push` -- pushes all commits to remote repository
+   * `git pull` -- pulls commits from remote repository
 
 ## Create your first repository
 
